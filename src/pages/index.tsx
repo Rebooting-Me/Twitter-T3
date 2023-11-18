@@ -8,7 +8,7 @@ export default function Home() {
 
   const user = useUser();
 
-  const {data} = api.post.getLatest.useQuery();
+  const {datas} = api.post.getLatest.useQuery();
 
   return (
     <>
@@ -22,7 +22,7 @@ export default function Home() {
           {!user.isSignedIn && <SignInButton />}
           {!!user.isSignedIn && <SignOutButton />}
         </div>
-          <div>{data && data.content}
+          <div>{datas && datas.content}
         </div>
       </main>
     </>
