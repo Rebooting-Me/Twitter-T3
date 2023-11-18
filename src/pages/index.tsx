@@ -22,8 +22,7 @@ export default function Home() {
           {!user.isSignedIn && <SignInButton />}
           {!!user.isSignedIn && <SignOutButton />}
         </div>
-          <div>{data && data.content}
-        </div>
+        <div>{data?.content}</div>
       </main>
     </>
   );
