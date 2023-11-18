@@ -8,6 +8,9 @@ export default {
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
       },
+      colors: {
+        'custom-blue': '#6366f1',
+      },
     },
   },
   plugins: [],
