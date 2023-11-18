@@ -22,7 +22,7 @@ export default function Home() {
           {!user.isSignedIn && <SignInButton />}
           {!!user.isSignedIn && <SignOutButton />}
         </div>
-        <div>{data?.content}</div>
+        {data?.map(({ id, content }) => <div key={id}>{content}</div>)}
       </main>
     </>
   );
